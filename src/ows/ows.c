@@ -376,6 +376,7 @@ int main(int argc, char *argv[])
 #endif
 
     query=NULL;
+    *query = 0;
     if (!o->exit) query = cgi_getback_query(o);  /* Retrieve safely query string */
     if (!o->exit) ows_log(o, 4, query);          /* Log input query if asked */
 
